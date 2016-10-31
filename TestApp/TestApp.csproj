@@ -43,8 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DownloadHelperClasses\CompletedState.cs" />
+    <Compile Include="DownloadHelperClasses\DownloadFileCompletedArgs.cs" />
+    <Compile Include="DownloadHelperClasses\DownloadFileProgressChangedArgs.cs" />
+    <Compile Include="DownloadHelperClasses\DownloadWebClient.cs" />
+    <Compile Include="DownloadHelperClasses\EventHandlerExtensions.cs" />
+    <Compile Include="DownloadHelperClasses\FileDownloader.cs" />
+    <Compile Include="DownloadHelperClasses\FileHelpers.cs" />
+    <Compile Include="DownloadHelperClasses\IDnsFallbackResolver.cs" />
+    <Compile Include="DownloadHelperClasses\IDownloadCache.cs" />
+    <Compile Include="DownloadHelperClasses\IFileDownloader.cs" />
+    <Compile Include="DownloadHelperClasses\ILogger.cs" />
+    <Compile Include="DownloadHelperClasses\IStreamCopyWorker.cs" />
+    <Compile Include="DownloadHelperClasses\LoggerFacade.cs" />
+    <Compile Include="DownloadHelperClasses\StreamCopyCompleteEventArgs.cs" />
+    <Compile Include="DownloadHelperClasses\StreamCopyProgressEventArgs.cs" />
+    <Compile Include="DownloadHelperClasses\StreamCopyWorker.cs" />
+    <Compile Include="DownloadHelperClasses\WebHeaderCollectionExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
