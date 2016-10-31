@@ -46,9 +46,12 @@ namespace TestApp
 
             foreach (var drive in drives)
             {
-                Thread findThread = new Thread(new ParameterizedThreadStart(FindOnDrive));
-                findThread.Name = "Thread " + drive.Name.Substring(0, 1);
-                _threads.Add(findThread);
+                if (drive.IsReady)
+                {
+                    Thread findThread = new Thread(new ParameterizedThreadStart(FindOnDrive));
+                    findThread.Name = "Thread " + drive.Name.Substring(0, 1);
+                    _threads.Add(findThread);
+                }
             }
 
             for (int i = 0; i < _threads.Count; i++)
