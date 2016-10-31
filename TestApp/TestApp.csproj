@@ -60,6 +60,7 @@
     <Compile Include="DownloadHelperClasses\StreamCopyProgressEventArgs.cs" />
     <Compile Include="DownloadHelperClasses\StreamCopyWorker.cs" />
     <Compile Include="DownloadHelperClasses\WebHeaderCollectionExtensions.cs" />
+    <Compile Include="DownloadManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.cs" />
