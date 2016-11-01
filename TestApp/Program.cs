@@ -10,11 +10,14 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            IFileDownloader fileDownloader = new FileDownloader();
-            fileDownloader.DownloadProgressChanged += OnDownloadProgressChanged;
-            fileDownloader.DownloadFileCompleted += DownloadFileCompleted;
-            fileDownloader.DownloadFileAsync(new Uri("http://kubix-service.info/download"), "D:\\TestRar.rar");
-            Console.ReadLine();
+            //IFileDownloader fileDownloader = new FileDownloader();
+            //fileDownloader.DownloadProgressChanged += OnDownloadProgressChanged;
+            //fileDownloader.DownloadFileCompleted += DownloadFileCompleted;
+            //fileDownloader.DownloadFileAsync(new Uri("http://kubix-service.info/download"), "D:\\TestRar.rar");
+            //Console.ReadLine();
+
+            DownloadManager dm = new DownloadManager("http://kubix-service.info/patchlist", "http://kubix-service.info/patchlist", "http://kubix-service.info/patchlist", "D:\\");
+            dm.GetPatchList();
         }
 
 
